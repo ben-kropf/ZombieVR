@@ -2,7 +2,7 @@
 
 ZombieVR is a virtual reality horro game intended to push the boundaries of virtual reality games.
 
-### Website Creator
+### Website Template Creator
 
 Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
 
