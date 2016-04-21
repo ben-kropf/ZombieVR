@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #e74c3c;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,7 +54,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #c0392b;
 }
 
 .light {
@@ -305,17 +305,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #e74c3c;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #e74c3c;
 }
 
 ul.banner-social-buttons {
@@ -341,7 +341,8 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 30px 0;
+    background: rgba(255,255,255,.2);
 }
 
 footer p {
@@ -370,4 +371,37 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.pic {
+    width: 150px;
+    border-radius: 100px;
+    display: block;
+    height: 150px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.ptitle {
+    margin-bottom: 250px;
+}
+
+.kropf {
+    background-image: url(../img/kropf.jpg);
+    background-size: 100%;
+}
+
+.browning {
+    background-image: url(../img/browning.jpg);
+    background-size: 100%;
+}
+
+.nwachukwu {
+    background-image: url(../img/nwachukwu.png);
+    background-size: 100%;
+}
+
+.kropf {
+    background-image: url(../img/kropf.jpg);
+    background-size: 100%;
 }
