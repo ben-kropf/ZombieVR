@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 		Camera.main.rect = new Rect(0f, 0f, 1f, 1f);
 		mazeInstance = Instantiate(mazePrefab) as Maze;
 		mazeInstance.Generate();
-		mazeInstance.transform.localScale = new Vector3(3.0f,3.0f,3.0f);
+		mazeInstance.transform.localScale = new Vector3(4.0f,4.0f,4.0f);
         Instantiate(player, new Vector3(0.5f, 0.5f, 0.0f), transform.rotation);
 		//playerInstance.SetLocation(mazeInstance.GetCell(mazeInstance.RandomCoordinates));
 		//Camera.main.clearFlags = CameraClearFlags.Depth;
