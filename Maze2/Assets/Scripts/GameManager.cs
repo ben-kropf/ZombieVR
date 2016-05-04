@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour {
 
 	private Player playerInstance;
 
+    public GameObject player;
+
 	private void Start () {
 		BeginGame();
 	}
@@ -27,7 +29,7 @@ public class GameManager : MonoBehaviour {
 		mazeInstance = Instantiate(mazePrefab) as Maze;
 		mazeInstance.Generate();
 		mazeInstance.transform.localScale = new Vector3(3.0f,3.0f,3.0f);
-		//playerInstance = Instantiate(playerPrefab) as Player;
+        Instantiate(player, new Vector3(0.5f, 0.5f, 0.0f), transform.rotation);
 		//playerInstance.SetLocation(mazeInstance.GetCell(mazeInstance.RandomCoordinates));
 		//Camera.main.clearFlags = CameraClearFlags.Depth;
 		//Camera.main.rect = new Rect(0f, 0f, 0.5f, 0.5f);
