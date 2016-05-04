@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\FlashlightToggle.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\IntVector2.cs" />
      <Compile Include="Assets\Scripts\Maze.cs" />
@@ -56,6 +57,7 @@
      <Compile Include="Assets\Scripts\MazeRoom.cs" />
      <Compile Include="Assets\Scripts\MazeRoomSettings.cs" />
      <Compile Include="Assets\Scripts\MazeWall.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
  <Reference Include="UnityEngine.UI">

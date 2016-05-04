@@ -27,6 +27,14 @@ public static class MazeDirections {
 	public static MazeDirection GetOpposite (this MazeDirection direction) {
 		return opposites[(int)direction];
 	}
+
+	public static MazeDirection GetNextClockwise (this MazeDirection direction) {
+		return (MazeDirection)(((int)direction + 1) % Count);
+	}
+
+	public static MazeDirection GetNextCounterclockwise (this MazeDirection direction) {
+		return (MazeDirection)(((int)direction + Count - 1) % Count);
+	}
 	
 	private static IntVector2[] vectors = {
 		new IntVector2(0, 1),

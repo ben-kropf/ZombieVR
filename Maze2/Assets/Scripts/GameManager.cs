@@ -5,27 +5,39 @@ public class GameManager : MonoBehaviour {
 
 	public Maze mazePrefab;
 
+	public Player playerPrefab;
+
 	private Maze mazeInstance;
 
+	private Player playerInstance;
+
 	private void Start () {
-		BeginGame();
+		StartCoroutine(BeginGame());
 	}
 	
 	private void Update () {
-		if (Input.GetKeyDown(KeyCode.Return)) {
+		if (Input.GetKeyDown(KeyCode.Space)) {
 			RestartGame();
 		}
 	}
 
-	private void BeginGame () {
+	private IEnumerator BeginGame () {
+		Camera.main.clearFlags = CameraClearFlags.Skybox;
+		Camera.main.rect = new Rect(0f, 0f, 1f, 1f);
 		mazeInstance = Instantiate(mazePrefab) as Maze;
-		mazeInstance.Generate();
-        mazeInstance.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
+		yield return StartCoroutine(mazeInstance.Generate());
+		playerInstance = Instantiate(playerPrefab) as Player;
+		playerInstance.SetLocation(mazeInstance.GetCell(mazeInstance.RandomCoordinates));
+		Camera.main.clearFlags = CameraClearFlags.Depth;
+		Camera.main.rect = new Rect(0f, 0f, 0.5f, 0.5f);
 	}
 
 	private void RestartGame () {
 		StopAllCoroutines();
 		Destroy(mazeInstance.gameObject);
-		BeginGame();
+		if (playerInstance != null) {
+			Destroy(playerInstance.gameObject);
+		}
+		StartCoroutine(BeginGame());
 	}
 }
