@@ -59,10 +59,13 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             m_MouseLook.SetCursorLock(true);
+
+            // Default Values
             m_WalkSpeed = 3;
             m_RunSpeed = 8;
             m_CharacterController.height = 1.8f;
             m_RunstepLenghten = 0.5f;
+            m_JumpSpeed = 8;
         }
 
 

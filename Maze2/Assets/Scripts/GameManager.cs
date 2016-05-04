@@ -2,16 +2,10 @@
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
-
 	public Maze mazePrefab;
-
-	public Player playerPrefab;
-
 	private Maze mazeInstance;
-
-	private Player playerInstance;
-
-    public GameObject player;
+	public GameObject playerPrefab;
+    private GameObject playerInstance;
 
 	private void Start () {
 		BeginGame();
@@ -24,24 +18,20 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void BeginGame () {
-		Camera.main.clearFlags = CameraClearFlags.Skybox;
-		Camera.main.rect = new Rect(0f, 0f, 1f, 1f);
 		mazeInstance = Instantiate(mazePrefab) as Maze;
 		mazeInstance.Generate();
 		mazeInstance.transform.localScale = new Vector3(4.0f,4.0f,4.0f);
-        Instantiate(player, new Vector3(0.5f, 0.5f, 0.0f), transform.rotation);
-		//playerInstance.SetLocation(mazeInstance.GetCell(mazeInstance.RandomCoordinates));
-		//Camera.main.clearFlags = CameraClearFlags.Depth;
-		//Camera.main.rect = new Rect(0f, 0f, 0.5f, 0.5f);
 
+        playerInstance = Instantiate(playerPrefab, new Vector3(0.5f, 0.5f, 0.0f), transform.rotation) as GameObject;
+        Camera.main.clearFlags = CameraClearFlags.Skybox;
+		Camera.main.rect = new Rect(0f, 0f, 1f, 1f);
 	}
 
 	private void RestartGame () {
 		StopAllCoroutines();
 		Destroy(mazeInstance.gameObject);
-		if (playerInstance != null) {
-			Destroy(playerInstance.gameObject);
-		}
+		Destroy(playerInstance.gameObject);
+		
 		BeginGame();
 	}
 }
