@@ -49,6 +49,8 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         // Use this for initialization
         private void Start() {
             m_CharacterController = GetComponent<CharacterController>();
+            m_CharacterController.height = 1.8f;
+            m_RunstepLenghten = 0.5f;
             m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
             m_FovKick.Setup(m_Camera);
@@ -59,6 +61,8 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             m_MouseLook.SetCursorLock(true);
+            m_WalkSpeed = 2;
+            m_RunSpeed = 5;
         }
 
 
