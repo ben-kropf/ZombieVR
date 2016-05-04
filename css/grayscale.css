@@ -380,11 +380,28 @@ body {
     display: block;
     height: 150px;
     position: relative;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: auto;
+}
+
+.dev {
+    margin-bottom: 50px;
+}
+
+.checkpoint {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.demo-image {
+    margin-bottom: 50px;
 }
 
 .ptitle {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.last {
     margin-bottom: 250px;
 }
 
@@ -403,7 +420,7 @@ body {
     background-size: 100%;
 }
 
-.kropf {
-    background-image: url(../img/kropf.jpg);
+.alonso {
+    background-image: url(../img/alonso.png);
     background-size: 100%;
 }
