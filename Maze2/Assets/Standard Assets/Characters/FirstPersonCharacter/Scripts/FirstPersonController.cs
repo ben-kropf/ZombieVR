@@ -86,6 +86,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
 
             if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded) {
                 m_MoveDir.y = 0f;
+                print("moving!");
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
