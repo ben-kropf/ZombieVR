@@ -9,14 +9,62 @@ public class MazeDoor : MazePassage {
 	public Transform hinge;
 
 	private bool isMirrored;
+    private bool enter;
+    private bool open;
+    GameObject player;
 
 	private MazeDoor OtherSideOfDoor {
 		get {
 			return otherCell.GetEdge(direction.GetOpposite()) as MazeDoor;
 		}
 	}
-	
+   
+
+    public void Start()
+    {
+        
+        
+
+
+
+    }
+    public void Update()
+    {
+        float distance = Vector3.Distance(transform.position, player.transform.position);
+        if (distance < 2)
+        {
+            enter = true;
+        }
+        else
+        {
+            enter = false;
+        }
+        
+        if(Input.GetKeyDown("e") && enter){
+            open = !open;
+        }
+        if (open)
+        {
+            OtherSideOfDoor.hinge.localRotation = hinge.localRotation =
+                isMirrored ? mirroredRotation : normalRotation;
+        }
+    }
+    void OnGUI()
+    {
+        if (enter)
+        {
+            GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 100, 150, 30), "Press 'E' to open the door");
+        }
+    }
+    
 	public override void Initialize (MazeCell primary, MazeCell other, MazeDirection direction) {
+        GameObject[] temp;
+        temp = GameObject.FindGameObjectsWithTag("Player");
+
+        if (temp[0] != null)
+        {
+            player = temp[0];
+        }
 		base.Initialize(primary, other, direction);
 		if (OtherSideOfDoor != null) {
 			isMirrored = true;
