@@ -594,6 +594,14 @@ public class WeaponScriptNEW : MonoBehaviour
                 concMark.transform.parent = hit.transform;
 
             }
+            //ADDED
+            else if (hit.collider.tag == "Zombie")
+            {
+                print("HIT COLLIDER");
+                Instantiate(Blood, contact, rot);
+                hit.collider.SendMessageUpwards("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
+
+            }
             else if (hit.collider.tag == "Enemy")
             {
                 Instantiate(Blood, contact, rot);
@@ -687,6 +695,14 @@ public class WeaponScriptNEW : MonoBehaviour
             }
             else if (hit.collider.tag == "Enemy")
             {
+                Instantiate(Blood, contact, rot);
+                hit.collider.SendMessageUpwards("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
+
+            }
+            //ADDED
+            else if (hit.collider.tag == "Zombie")
+            {
+                print("HIT COLLIDER");
                 Instantiate(Blood, contact, rot);
                 hit.collider.SendMessageUpwards("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
 

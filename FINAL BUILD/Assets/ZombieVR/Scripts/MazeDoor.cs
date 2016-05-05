@@ -13,6 +13,8 @@ public class MazeDoor : MazePassage {
     private bool open;
     GameObject player;
 
+    public GUISkin mySkin;
+
 	private MazeDoor OtherSideOfDoor {
 		get {
 			return otherCell.GetEdge(direction.GetOpposite()) as MazeDoor;
@@ -53,7 +55,10 @@ public class MazeDoor : MazePassage {
     {
         if (enter)
         {
+            GUI.skin = mySkin;
+            GUI.depth = 2;
             GUI.Label(new Rect(Screen.width / 2 - 75, Screen.height - 100, 150, 30), "Press 'E' to open the door");
+            //GUI.Label(new Rect(Screen.width / 2 - 400, Screen.height - (Screen.height / 1.4f), 800, 100), "Press key <color=#88FF6AFF> << E >> </color> to open the door", mySkin.customStyles[1]);
         }
     }
     

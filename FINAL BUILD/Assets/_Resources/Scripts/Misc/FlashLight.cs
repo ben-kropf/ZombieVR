@@ -10,7 +10,7 @@ public class FlashLight : MonoBehaviour
     private float timeLeft;
     private float recharge;
     private bool stop = true;
-    public const float BatteryLife = 10.0f;
+    public const float BatteryLife = 30f;
     public const float RechargeTime = 10f;
 
     private float minutes;

@@ -14,7 +14,7 @@ public class ScoreManager : MonoBehaviour
     public GUISkin mySkin;
 
     public int pointsToNextRank = 50;
-    public int lvl = 0;
+    public int hits = 0;
     public AudioClip levelUpSound;
     private bool playerDead = false;
     public AudioSource aSource;
@@ -36,12 +36,15 @@ public class ScoreManager : MonoBehaviour
     {
         currentScore += val;
 
-        if (currentScore >= pointsToNextRank)
+        if (currentScore >= 4)
         {
-            lvl++;
             aSource.PlayOneShot(levelUpSound, 0.2f);
             pointsToNextRank += currentScore;
         }
+    }
+
+    public void addHits(int val) {
+        hits += val;
     }
 
     public void PlayerDead()
@@ -59,8 +62,8 @@ public class ScoreManager : MonoBehaviour
         GUI.Label(new Rect(40, Screen.height - 80, 100, 60), " CORES :");
         GUI.Label(new Rect(100, Screen.height - 80, 160, 60), "" + currentScore + "/4", mySkin.customStyles[0]);
 
-        //GUI.Label(new Rect(40, Screen.height - 110, 100, 60), " LVL :");
-        //GUI.Label(new Rect(100, Screen.height - 110, 160, 60), "" + lvl, mySkin.customStyles[0]);
+        GUI.Label(new Rect(40, Screen.height - 140, 100, 60), " HITS :");
+        GUI.Label(new Rect(100, Screen.height - 140, 160, 60), "" + hits, mySkin.customStyles[0]);
 
         GUI.color = new Color(1.0f, 1.0f, 1.0f, alphaHit);
         GUI.DrawTexture(new Rect((Screen.width / 2) - 16, (Screen.height / 2) - 16, 32, 32), hitCrosshairTexture);
