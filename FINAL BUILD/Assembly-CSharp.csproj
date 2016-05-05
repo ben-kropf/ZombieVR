@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{803DA804-F6E2-C2BF-CD47-FD8EA3D0289C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_WEBPLAYER;ENABLE_SUBSTANCE;WEBPLUG;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ZombieVR\Scripts\FlashlightToggle.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\GameManager.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\IntVector2.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\LightFlicker.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\Maze.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\MazeCell.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\MazeCellEdge.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\MazeDirection.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\MazeDoor.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\MazePassage.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\MazeRoom.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\MazeRoomSettings.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\MazeWall.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\Player.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\FirstPersonCharacter\Scripts\GUICrosshair.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\FirstPersonCharacter\Scripts\OldWeaponManager.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\FirstPersonCharacter\Scripts\Weapon.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\ZombieVR\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\_Resources\Meshes\Target\ObjectDamage.cs" />
+     <Compile Include="Assets\_Resources\Meshes\Target\Target.cs" />
+     <Compile Include="Assets\_Resources\Meshes\Target\TargetManager.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\AerodynamicResistance.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\AntiRollBar.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\CarController.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\Drivetrain.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\SkidEmiter.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\Skidmarks.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\SoundController.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\TractionHelper.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\Wheel.cs" />
+     <Compile Include="Assets\_Resources\Scripts\BuggyScripts\Wing.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Buoyancy.cs" />
+     <Compile Include="Assets\_Resources\Scripts\DestroyAfter.cs" />
+     <Compile Include="Assets\_Resources\Scripts\DetachChildrenAndDestroy.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Gate.cs" />
+     <Compile Include="Assets\_Resources\Scripts\HeadLookScripts\Sharp\CursorHit.cs" />
+     <Compile Include="Assets\_Resources\Scripts\HeadLookScripts\Sharp\HeadLookController.cs" />
+     <Compile Include="Assets\_Resources\Scripts\HitSounds.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Ladder.cs" />
+     <Compile Include="Assets\_Resources\Scripts\LandMineDamage.cs" />
+     <Compile Include="Assets\_Resources\Scripts\LockCursor.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Medic.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\Billboard.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\CrosshairSimple.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\Destroyer.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\DropSound.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\Explosion.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\Explosion2.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\FadeLight.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\FadeRestartLevel.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\FlashLight.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\PoolTrigger.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\RotateBullet.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\RotateGrenade.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\ShowTexture.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Misc\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\_Resources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Pickup.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Platform\Activate.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Platform\MovePlatforms.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Platform\PlatformActivate.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Platform\PlatformParent.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\BreathAnim.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\Delayeffect.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\FPSController.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\FootSteps.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\HealthScript.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\Minimap.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\NoWeapon.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\StabilizeKickback.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\USE.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\UseLadder.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\WeaponIndex.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\WeaponManager.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Player\WeaponScriptNEW.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Projectile.cs" />
+     <Compile Include="Assets\_Resources\Scripts\ScoreManager.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Vehicle scripts\DamageonTriggerEnter.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Vehicle scripts\Detach.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Vehicle scripts\HelicopterHealth.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Vehicle scripts\VehicleCamera.cs" />
+     <Compile Include="Assets\_Resources\Scripts\Vehicle scripts\VehicleScript.cs" />
+     <Compile Include="Assets\_Resources\Unity5CausticsShader\CausticsProjector.cs" />
+     <Compile Include="Assets\_Resources\Unity5CausticsShader\StandardCausticsShaderGUI.cs" />
+     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\_Resources\Fonts\BigNoodle\big_noodle_titling.txt" />
+     <None Include="Assets\_Resources\Shaders\Car.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\_Resources\Shaders\Particle Add.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\_Resources\Particles\Particle Effects\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Standard Assets\Detonator\Resources\Detonator\Textures\HeatDistort.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\_Resources\Meshes\Buggy\BuggyAssets\Source Assets\Skidmarks\Skidmarks.shader" />
+     <None Include="Assets\_Resources\Shaders\Scroll.shader" />
+     <None Include="Assets\_Resources\Unity5CausticsShader\UnityStandardCausticsCore.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Standard Assets\Bootcamp Assets\Shaders\Particle Alpha Blend.shader" />
+     <None Include="Assets\ZombieVR\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\_Resources\Shaders\Bullet.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\_Resources\Unity5CausticsShader\UnityStandardCausticsInput.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\_Resources\README.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\ZombieVR\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\_Resources\Unity5CausticsShader\StandardCaustics.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Standard Assets\prototype_textures\readme.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\ZombieVR\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\ZombieVR\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\_Resources\Shaders\Particle Multiply.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>/Users/benkropf/Development/ZombieVR/FINAL BUILD/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{0288F09C-7739-9C28-E42F-06AB56CEA63B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
