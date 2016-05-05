@@ -48,6 +48,7 @@
      <Compile Include="Assets\ZombieVR\Scripts\FlashlightToggle.cs" />
      <Compile Include="Assets\ZombieVR\Scripts\GameManager.cs" />
      <Compile Include="Assets\ZombieVR\Scripts\IntVector2.cs" />
+     <Compile Include="Assets\ZombieVR\Scripts\KeyCollector.cs" />
      <Compile Include="Assets\ZombieVR\Scripts\LightFlicker.cs" />
      <Compile Include="Assets\ZombieVR\Scripts\Maze.cs" />
      <Compile Include="Assets\ZombieVR\Scripts\MazeCell.cs" />

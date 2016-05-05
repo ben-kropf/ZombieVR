@@ -56,8 +56,8 @@ public class ScoreManager : MonoBehaviour
         GUI.skin = mySkin;
         GUI.depth = 2;
 
-        GUI.Label(new Rect(40, Screen.height - 80, 100, 60), " SCORE :");
-        GUI.Label(new Rect(100, Screen.height - 80, 160, 60), "" + currentScore, mySkin.customStyles[0]);
+        GUI.Label(new Rect(40, Screen.height - 80, 100, 60), " CORES :");
+        GUI.Label(new Rect(100, Screen.height - 80, 160, 60), "" + currentScore + "/4", mySkin.customStyles[0]);
 
         //GUI.Label(new Rect(40, Screen.height - 110, 100, 60), " LVL :");
         //GUI.Label(new Rect(100, Screen.height - 110, 160, 60), "" + lvl, mySkin.customStyles[0]);
